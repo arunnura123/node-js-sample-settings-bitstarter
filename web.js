@@ -5,7 +5,8 @@ var buff = Buffer(128);
 var buf = new Buffer(128);
 app.get('/', function(request, response) {
 buff=fs.readFileSync("./index.html");
-response.send('Hello World!');
+buffer.write(buff,"utf-8");
+response.send(buffer.toString("utf-8", 0, 32));
 } );
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
