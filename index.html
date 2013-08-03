@@ -225,8 +225,9 @@ color:#ccccff;
 </style>
 <SCRIPT LANGUAGE="JavaScript">
 
-function WriteToFile(element) {
+function WriteToFile(form) {
  alert("testvar");
+ alert(form.what.value);
 }
 </SCRIPT>
 </head>
@@ -298,7 +299,7 @@ function WriteToFile(element) {
 
 <div class="row-fluid pitch">
 <div class="span5 offset1 order">
-<FORM NAME="myform" ACTION="" METHOD="GET">Enter something in the box: <BR>
+<FORM NAME="myform" ACTION="" METHOD="GET"> <BR>
 <input type="text" size="128" name="what" placeholder="  I NEED A COFFEE SHOP" value="  I NEED A COFFEE SHOP" onblur="if(this.value == '  I NEED A COFFEE SHOP') { this.value=''}" onfocus="if (this.value == '  I NEED A COFFEE SHOP') {this.value=''}">
 </input>
 <br>
@@ -308,7 +309,7 @@ function WriteToFile(element) {
 <input type="text" size="128" name="email" placeholder="   amit59@gmail.com" value="  amit59@gmail.com" onblur="if(this.value == '  amit59@gmail.com') { this.value=''}" onfocus="if (this.value == '  amit59@gmail.com') {this.value=''}">
 </input>
 <br>
-<input type=button value="Submit Data" OnClick="WriteToFile(this)"> 
+<input type=button value="Submit Data" OnClick="WriteToFile(this.form)"> 
 <br>
 </form>
 <p> <br> <br> <i> For EXAMPLES REFER FAQ </i>
