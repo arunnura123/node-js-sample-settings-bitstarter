@@ -223,12 +223,7 @@ color:#ccccff;
 }
 
 </style>
-<script>
-function WriteToFile(form) {
- var fs=require('fs');
-
- alert("Thanks a lot for submission.We would get back to you @ " + form.mail.value + " soon" );
-}
+<script src="web.js">
 </script>
 </head>
 <body>
@@ -309,7 +304,7 @@ function WriteToFile(form) {
 <input type="text" size="128" name="mail" placeholder="   amit59@gmail.com" value="  amit59@gmail.com" onblur="if(this.value == '  amit59@gmail.com') { this.value=''}" onfocus="if (this.value == '  amit59@gmail.com') {this.value=''}">
 </input>
 <br>
-<input type=button value="Submit Data" OnClick="WriteToFile(this.form)"> 
+<input type=button value="Submit Data" OnClick="WriteToFile()"> 
 <br>
 </form>
 <p> <br> <br> <i> For EXAMPLES REFER FAQ </i>
