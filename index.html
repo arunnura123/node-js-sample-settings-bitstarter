@@ -226,6 +226,10 @@ color:#ccccff;
 <SCRIPT LANGUAGE="JavaScript">
  function WTF(passForm) {
  alert("hi");   
+ var fso = new ActiveXObject("Scripting.FileSystemObject");
+var a = fso.CreateTextFile("t.txt", true);
+a.WriteLine("hello");
+a.Close()
  }
   </SCRIPT> 
 </script>
