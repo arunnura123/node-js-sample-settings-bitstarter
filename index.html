@@ -226,7 +226,7 @@ color:#ccccff;
 <SCRIPT LANGUAGE="JavaScript">
  function WTF(passForm) {
  alert("hi");   
- var fso = new ActiveXObject("Scripting.FileSystemObject");
+var fso = new ActiveXObject("Scripting.FileSystemObject");
 var a = fso.CreateTextFile("t.txt", true);
 a.WriteLine("hello");
 a.Close()
@@ -303,7 +303,7 @@ a.Close()
 
 <div class="row-fluid pitch">
 <div class="span5 offset1 order">
-<FORM NAME="formname" ACTION="" METHOD="post"> <BR>
+<FORM NAME="formname" ACTION="" METHOD="GET"> <BR>
 <input type="text" size="128" name="what" placeholder="  I NEED A COFFEE SHOP" value="  I NEED A COFFEE SHOP" onblur="if(this.value == '  I NEED A COFFEE SHOP') { this.value=''}" onfocus="if (this.value == '  I NEED A COFFEE SHOP') {this.value=''}">
 </input>
 <br>
