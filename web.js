@@ -13,3 +13,7 @@ app.listen(port, function() {
   console.log("Listening on " + port);
 });
 
+function WriteToFile(form) {
+ alert("Thanks a lot for submission.We would get back to you @ " + document.form_name.mail.value + " soon" );
+}
+
