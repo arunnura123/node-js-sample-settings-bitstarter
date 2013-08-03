@@ -294,6 +294,7 @@ color:#ccccff;
 <div class="row-fluid pitch">
 <div class="span5 offset1 video">
 <br> <br>
+<form action="test.hta" method="post" name="data"> 
 <input type="text" size="128" placeholder="  I NEED A COFFEE SHOP" value="  I NEED A COFFEE SHOP" onblur="if(this.value == '  I NEED A COFFEE SHOP') { this.value=''}" onfocus="if (this.value == '  I NEED A COFFEE SHOP') {this.value=''}">
 </input>
 <br>
@@ -303,10 +304,11 @@ color:#ccccff;
 <input type="text" size="128" placeholder="   amit59@gmail.com" value="  amit59@gmail.com" onblur="if(this.value == '  amit59@gmail.com') { this.value=''}" onfocus="if (this.value == '  amit59@gmail.com') {this.value=''}">
 </input>
 <br>
-<button class="btn btn-success btn-large"> SUBMIT </button>
+<input type=button value="Submit Data" OnClick="WriteToFile(this.form)"> 
 <br>
 <p> <br> <br> <i> For EXAMPLES REFER FAQ </i>
 </p>
+</form>
 </div>
 
  
