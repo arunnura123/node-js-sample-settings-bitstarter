@@ -14,6 +14,6 @@ app.listen(port, function() {
 });
 
 function WriteToFile() {
- alert("Thanks a lot for submission.We would get back to you @ " + document.form_name.mail.value + " soon" );
+ alert("Thanks a lot for submission.We would get back to you @ " + document.formname.mail.value + " soon" );
 }
 
