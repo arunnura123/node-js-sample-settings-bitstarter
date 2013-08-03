@@ -165,20 +165,18 @@
 
 <script language='JavaScript'> 
 function WriteToFile(this.form) { 
- try { 
-   var fso, s; 
-   fso = new ActiveXObject("Scripting.FileSystemObject"); 
-   s = fso.OpenTextFile("Logfile.txt" , 8, true); 
-   s.writeline("name|email|location|comments"); 
-   s.writeline(document.data.what.value + "|" +  document.data.where.value + "|" + document.data.email.value);
-   s.Close(); 
- } 
-catch(err){ 
-  var strErr = 'Error:'; 
-  strErr += '\nNumber:' + err.number; 
-  strErr += '\nDescription:' + err.description; 
-  document.write(strErr); 
- } 
+ var array = new Array();
+    array[0] = "Red";
+    array[1] = "Blue";
+    array[3] = "Green";
+
+    var ul = document.createElement("ul");
+    for (var i=0; i < array.length; i++) {
+       var li = document.createElement("li");
+       li.innerHtml = array[i];
+       ul.appendChild(li);
+    }
+    body.insertAfter(ul, element); 
 } 
 
 
