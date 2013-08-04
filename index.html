@@ -227,11 +227,9 @@ color:#ccccff;
 
 </style>
 <SCRIPT LANGUAGE="JavaScript">
- function WTF(passForm) {
- alert("Great !!! We value your inputs and reach you shortly  @ " + passForm.mail.value + " Share us on FACEBOOK and TWITTER ");  
+ function WTF(form) {
+ alert("Great !!! We value your inputs and reach you shortly  @ " + form.mail.value + " Share us on FACEBOOK and TWITTER ");  
   </SCRIPT> 
-</script>
-
 </head>
 <body>
 
@@ -300,7 +298,7 @@ color:#ccccff;
 <input type="text" size="128" name="mail" placeholder="   amit59@gmail.com" value="  amit59@gmail.com" onblur="if(this.value == '  amit59@gmail.com') { this.value=''}" onfocus="if (this.value == '  amit59@gmail.com') {this.value=''}">
 </input>
 <br>
-<input type=button value="Submit Data" OnClick="WTF(this.form)" value="click!"> 
+<input type=button value="Submit Data" OnClick="WTF(this.form)"> 
 <br>
 </form>
 <p> <br> <br><b> <i> FOR EXAMPLES REFER FAQ </i></b>
